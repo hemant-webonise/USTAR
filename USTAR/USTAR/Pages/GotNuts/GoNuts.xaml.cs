@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using USTAR.Pages.GotNuts;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -20,11 +21,32 @@ namespace USTAR.Pages
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class Page2 : Page
+    public sealed partial class GoNuts : Page
     {
-        public Page2()
+        public GoNuts()
         {
             this.InitializeComponent();
+            MyFrame.Navigate(typeof(DonutPage));
+        }
+
+        private void DonutButton_Click(object sender, RoutedEventArgs e)
+        {
+            MyFrame.Navigate(typeof(DonutPage));
+        }
+
+        private void CoffeeButton_Click(object sender, RoutedEventArgs e)
+        {
+            MyFrame.Navigate(typeof(CoffePage));
+        }
+
+        private void ScheduleButton_Click(object sender, RoutedEventArgs e)
+        {
+            MyFrame.Navigate(typeof(SchedulePage));
+        }
+
+        private void CompleteButton_Click(object sender, RoutedEventArgs e)
+        {
+            MyFrame.Navigate(typeof(CompletePage));
         }
     }
 }
