@@ -35,28 +35,28 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
-            <Button Grid.Column="0" Style="{StaticResource NavigationButtonStyle}">
+            <Button Grid.Column="0" Style="{StaticResource NavigationButtonStyle}" Click="DonutButton_Click">
                 <StackPanel Orientation="Horizontal">
                     <Image Source="/Assets/donut-icon.png" Style="{StaticResource IconImageStyle}" />
                     <TextBlock Text="Donut" Foreground="White" />
                 </StackPanel>
             </Button>
 
-            <Button Grid.Column="1" Style="{StaticResource NavigationButtonStyle}">
+            <Button Grid.Column="1" Style="{StaticResource NavigationButtonStyle}" Click="CoffeeButton_Click">
                 <StackPanel Orientation="Horizontal">
                     <Image Source="/Assets/coffee-icon.png" Style="{StaticResource IconImageStyle}" />
                     <TextBlock Text="Coffee" Foreground="White" />
                 </StackPanel>
             </Button>
 
-            <Button Grid.Column="2" Style="{StaticResource NavigationButtonStyle}">
+            <Button Grid.Column="2" Style="{StaticResource NavigationButtonStyle}" Click="ScheduleButton_Click">
                 <StackPanel Orientation="Horizontal">
                     <Image Source="/Assets/schedule-icon.png" Style="{StaticResource IconImageStyle}" />
                     <TextBlock Text="Schedule" Foreground="White" />
                 </StackPanel>
             </Button>
 
-            <Button Grid.Column="3" Style="{StaticResource NavigationButtonStyle}">
+            <Button Grid.Column="3" Style="{StaticResource NavigationButtonStyle}" Click="CompleteButton_Click">
                 <StackPanel Orientation="Horizontal">
                     <Image Source="/Assets/complete-icon.png" Style="{StaticResource IconImageStyle}" />
                     <TextBlock Text="Complete" Foreground="White" />

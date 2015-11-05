@@ -96,6 +96,12 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MarvelFacade.cs" />
+    <Compile Include="MarvelSpecificBookPage.xaml.cs">
+      <DependentUpon>MarvelSpecificBookPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CharacterDataWrapper.cs" />
+    <Compile Include="Model\ComicDataWrapper.cs" />
     <Compile Include="NavigationStructure.xaml.cs">
       <DependentUpon>NavigationStructure.xaml</DependentUpon>
     </Compile>
@@ -113,6 +119,12 @@
     </Compile>
     <Compile Include="Pages\GotNuts\SchedulePage.xaml.cs">
       <DependentUpon>SchedulePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MarvelCharactersPage.xaml.cs">
+      <DependentUpon>MarvelCharactersPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MarvelComicsPage.xaml.cs">
+      <DependentUpon>MarvelComicsPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Pages\LoremPage.xaml.cs">
@@ -173,6 +185,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="MarvelSpecificBookPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="NavigationStructure.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -198,6 +214,14 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Pages\GotNuts\GoNuts.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\MarvelCharactersPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\MarvelComicsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
