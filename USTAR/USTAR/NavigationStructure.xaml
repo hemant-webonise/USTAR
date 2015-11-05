@@ -15,6 +15,7 @@
         <NavigationItem DisplayName="Page 3" PageType="pages:LoremPage" PageParameter="Page 3" />
         <NavigationItem DisplayName="Page 4" PageType="pages:LoremPage" PageParameter="Page 4" />
         <NavigationItem DisplayName="Page 5" PageType="pages:LoremPage" PageParameter="Page 5" />
+        <NavigationItem DisplayName="Page 2" PageType="pages:Page2" PageParameter="Page 5" />
     </NavigationItem>
 </NavigationItem>
 
