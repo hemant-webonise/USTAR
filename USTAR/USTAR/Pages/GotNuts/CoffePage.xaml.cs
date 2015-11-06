@@ -26,5 +26,49 @@ namespace USTAR.Pages.GotNuts
         {
             this.InitializeComponent();
         }
+        private string _roast;
+        private string _sweetener;
+        private string _cream;
+
+        private void Roast_Click(object sender, RoutedEventArgs e)
+        {
+            var selected = (MenuFlyoutItem)sender;
+            _roast = selected.Text;
+            displayResult();
+        }
+
+        private void Sweetener_Click(object sender, RoutedEventArgs e)
+        {
+            var selected = (MenuFlyoutItem)sender;
+            _sweetener = selected.Text;
+            displayResult();
+
+        }
+
+        private void Cream_Click(object sender, RoutedEventArgs e)
+        {
+            var selected = (MenuFlyoutItem)sender;
+            _cream = selected.Text;
+            displayResult();
+
+        }
+
+        private void displayResult()
+        {
+            if (_roast == "None" || String.IsNullOrEmpty(_roast))
+            {
+                ResultTextBlock.Text = "None";
+                return;
+            }
+
+            ResultTextBlock.Text = _roast;
+
+            if (_cream != "None" && !String.IsNullOrEmpty(_cream))
+                ResultTextBlock.Text += " + " + _cream;
+
+            if (_sweetener != "None" && !String.IsNullOrEmpty(_sweetener))
+                ResultTextBlock.Text += " + " + _sweetener;
+
+        }
     }
 }

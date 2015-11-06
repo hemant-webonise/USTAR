@@ -12,6 +12,8 @@
                 <ResourceDictionary Source="Themes/Converters.xaml" />
                 <ResourceDictionary Source="Themes/Frames.xaml" />
                 <ResourceDictionary Source="Themes/Typography.xaml" />
+                <!--Adding a Styles in Themes and relating them here -->
+                <ResourceDictionary Source="Themes/GoNut.xaml" />
                 <themes:Navigation />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
