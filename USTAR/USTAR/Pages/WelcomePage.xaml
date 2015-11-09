@@ -72,8 +72,9 @@
             
             <CommandBar.SecondaryCommands>
                 <AppBarButton x:Name="DisplayPerson" Label="Signed In : "  />
+                <AppBarButton Label="Update" Icon="Upload" Click="Update" />
                 <AppBarButton Label="Edit" Icon="Edit" />
-                <AppBarButton Label="Remove" Icon="Remove" />
+                <AppBarButton Label="Remove" Icon="Remove"  Click="ClearData" />
                 <AppBarButton Label="Add" Icon="Add"/>
             </CommandBar.SecondaryCommands>
         </CommandBar>
