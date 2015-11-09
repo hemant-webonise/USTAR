@@ -11,5 +11,16 @@ namespace USTAR.Pages
         {
             this.InitializeComponent();
         }
+
+        private void Button_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)
+        {
+
+        }
+
+        private void Name_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            DisplayPerson.Label = "Hemant";
+            Display.Text = Name.Text;
+        }
     }
 }

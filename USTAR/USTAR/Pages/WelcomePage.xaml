@@ -7,6 +7,21 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
+    <Page.TopAppBar>
+        <AppBar>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <StackPanel Orientation="Horizontal">
+                    <TextBox x:Name="Name"  TextChanged="Name_TextChanged"></TextBox>
+                    <TextBlock x:Name="Display" ></TextBlock>                    
+                </StackPanel>
+               
+            </Grid>
+        </AppBar>
+    </Page.TopAppBar>
     <ScrollViewer Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Padding="{x:Bind Frame.Padding, Mode=OneWay}">
         <StackPanel>
             <TextBlock Text="Welcome" Style="{StaticResource TitleTextBlockStyle}" />
@@ -46,4 +61,22 @@
             </TextBlock>
         </StackPanel>
     </ScrollViewer>
+    <!--Bottom APPBAR Button-->
+    <Page.BottomAppBar>
+        <CommandBar >
+            <AppBarToggleButton Label="PathIcon" IsThreeState="True">
+                <AppBarToggleButton.Icon>
+                    <PathIcon Data="F1 M 20,20L 24,10L 24,24L 5,24"/>
+                </AppBarToggleButton.Icon>
+            </AppBarToggleButton>
+            
+            <CommandBar.SecondaryCommands>
+                <AppBarButton x:Name="DisplayPerson" Label="Signed In : "  />
+                <AppBarButton Label="Edit" Icon="Edit" />
+                <AppBarButton Label="Remove" Icon="Remove" />
+                <AppBarButton Label="Add" Icon="Add"/>
+            </CommandBar.SecondaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
+
 </Page>
